@@ -6,7 +6,7 @@
   <link href="http://skadi.site/atom.xml" rel="self"/>
   
   <link href="http://skadi.site/"/>
-  <updated>2020-10-06T10:47:35.502Z</updated>
+  <updated>2020-10-06T10:50:08.622Z</updated>
   <id>http://skadi.site/</id>
   
   <author>
@@ -21,16 +21,15 @@
     <link href="http://skadi.site/2020/10/06/OpenSSH/"/>
     <id>http://skadi.site/2020/10/06/OpenSSH/</id>
     <published>2020-10-06T10:41:41.000Z</published>
-    <updated>2020-10-06T10:47:35.502Z</updated>
+    <updated>2020-10-06T10:50:08.622Z</updated>
     
-    <content type="html"><![CDATA[<meta name="referrer" content="no-referrer">OpenSSH下载[OpenSSH](OpenSSH.7z "OpenSSH下载")]]></content>
+    <content type="html"><![CDATA[<p><a href="OpenSSH.7z" title="OpenSSH下载">OpenSSH下载</a></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
-OpenSSH下载
-[OpenSSH](OpenSSH.7z &quot;OpenSSH下载&quot;)</summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;OpenSSH.7z&quot; title=&quot;OpenSSH下载&quot;&gt;OpenSSH下载&lt;/a&gt;&lt;/p&gt;
+</summary>
       
     
     
