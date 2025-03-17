@@ -1,0 +1,1118 @@
+
+  <!DOCTYPE html>
+  <html lang="zh-CN"  
+    
+      data-theme-mode="auto"
+    
+  >
+  <head>
+  
+  <meta charset="utf-8">
+  
+
+  
+
+  
+
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';</script>
+  
+  <title>
+    
+    Hexo
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
+  
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  
+  
+    
+<link rel="stylesheet" href="/css/loader.css">
+
+  
+  
+    <meta name="description" content="hexo-theme-reimu                  💘 博麗 霊夢 💘     演示网站 | 开发日志 简体中文 | English     [!WARNING]v1.0.0 以下版本已经废弃，请尽快升级到 v1.0.0 以上版本  本人是车车人，所以制作了这样一款博丽灵梦风格的 Hexo 主题，融合了 landscape、Tangyuxian 和 Shoka 三个主题">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/reimuREADME.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="hexo-theme-reimu                  💘 博麗 霊夢 💘     演示网站 | 开发日志 简体中文 | English     [!WARNING]v1.0.0 以下版本已经废弃，请尽快升级到 v1.0.0 以上版本  本人是车车人，所以制作了这样一款博丽灵梦风格的 Hexo 主题，融合了 landscape、Tangyuxian 和 Shoka 三个主题">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/banner.webp">
+<meta property="article:published_time" content="2025-03-17T06:45:10.411Z">
+<meta property="article:modified_time" content="2025-03-16T11:18:20.000Z">
+<meta property="article:author" content="vivlos">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/banner.webp">
+  
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <link rel="preload" href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  
+  
+  
+    
+<script src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js" integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script>
+
+  
+  
+    
+<link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
+
+  
+  
+  
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+  <body>
+    
+    
+  <div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi">
+        
+          <svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+           M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg>
+        
+      </div>
+      <div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var startLoading = () => {
+      time = Date.now();
+      document.getElementById('loader').classList.remove("loading");
+    }
+    var endLoading = () => {
+      if (!time) {
+        document.body.style.overflow = 'auto';
+        document.getElementById('loader').classList.add("loading");
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          document.body.style.overflow = 'auto';
+          document.getElementById('loader').classList.add("loading");
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    document.getElementById('loader').addEventListener('click', endLoading);
+  </script>
+
+<div id="copy-tooltip" style="pointer-events: none; opacity: 0; transition: all 0.2s ease; position: fixed;top: 50%;left: 50%;z-index: 999;transform: translate(-50%, -50%);color: white;background: rgba(0, 0, 0, 0.5);padding: 10px 15px;border-radius: 10px;">
+</div>
+
+
+    <div id="container">
+      <div id="wrap">
+        <div id="header-nav">
+  <nav id="main-nav">
+    
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/">首页</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/archives">归档</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/about">关于</a>
+        </span>
+      
+        <span class="main-nav-link-wrap">
+          <div class="main-nav-icon icon rotate">
+            &#xe62b;
+          </div>
+          <a class="main-nav-link" href="/friend">友链</a>
+        </span>
+      
+    
+    <a id="main-nav-toggle" class="nav-icon"></a>
+  </nav>
+  <nav id="sub-nav">
+    
+      <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅" target="_blank"></a>
+    
+    
+    
+  </nav>
+  
+</div>
+<header id="header">
+  
+    
+      <picture>
+        
+      </picture>
+      
+        <img fetchpriority="high" src="/images/banner.webp" alt="">
+      
+    
+  
+  <div id="header-outer">
+    <div id="header-title">
+      
+        
+        
+          <a href="/" id="logo">
+            <h1 data-aos="slide-up">Hexo</h1>
+          </a>
+        
+      
+      
+        
+        <h2 id="subtitle-wrap" data-aos="slide-down">
+          
+        </h2>
+      
+    </div>
+  </div>
+</header>
+
+        <div id="content"  class="sidebar-right" >
+          <aside id="sidebar">
+  
+  
+  
+  <div class="sidebar-wrapper ">
+    <div class="sidebar-wrap" data-aos="fade-up">
+      
+        <div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="vivlos" class="lazyload">
+  <div class="sidebar-author-name">vivlos</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/skaaadiii itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-twitter sidebar-social-icon">
+      <a href=https://twitter.com/SAT855883087 itemprop="url" target="_blank" aria-label="twitter" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-bilibili sidebar-social-icon">
+      <a href=https://space.bilibili.com/35615939 itemprop="url" target="_blank" aria-label="bilibili" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+
+      
+      
+    </div>
+  </div>
+
+  <div class="sidebar-widget">
+  
+  </div>
+  
+</aside>
+
+          <section id="main"><article id="page-" class="h-entry article article-type-page" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <span class="article-date-link" data-aos="zoom-in">
+    <time datetime="2025-03-17T06:45:10.411Z" itemprop="datePublished">2025-03-17</time>
+    <time style="display: none;" id="post-update-time">2025-03-16</time>
+  </span>
+</div>
+
+      
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <img src="https://cdn.jsdelivr.net/gh/D-Sketon/hexo-theme-reimu@main/_screenshot/Reimu_dark.png"/>
+<div align = center>
+  <h1>hexo-theme-reimu</h1>
+  <img alt="NPM License" src="https://img.shields.io/npm/l/hexo-theme-reimu">
+  <img alt="NPM Version" src="https://img.shields.io/npm/v/hexo-theme-reimu">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/D-Sketon/hexo-theme-reimu">
+  <img src="https://wakatime.com/badge/user/a6ea8444-9e83-48bb-9744-09a19ac07114/project/fe59c195-6633-4ee8-89c0-e1b24fa1fff4.svg" alt="wakatime">
+  <p align="center">
+  💘 博麗 霊夢 💘
+  </p>
+
+<p><a target="_blank" rel="noopener" href="https://d-sketon.github.io/">演示网站</a> | <a target="_blank" rel="noopener" href="https://d-sketon.github.io/20240601/hexo-theme-reimu-log/">开发日志</a></p>
+<p>简体中文 | <a target="_blank" rel="noopener" href="https://github.com/D-Sketon/hexo-theme-reimu/blob/main/README.en.md">English</a></p>
+</div>
+
+<hr>
+<blockquote>
+<p>[!WARNING]<br>v1.0.0 以下版本已经废弃，请尽快升级到 v1.0.0 以上版本</p>
+</blockquote>
+<p>本人是车车人，所以制作了这样一款博丽灵梦风格的 Hexo 主题，融合了 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>、<a target="_blank" rel="noopener" href="https://github.com/tangyuxian/hexo-theme-tangyuxian">Tangyuxian</a> 和 <a target="_blank" rel="noopener" href="https://github.com/amehime/hexo-theme-shoka">Shoka</a> 三个主题</p>
+<table>
+<thead>
+<tr>
+<th>framework</th>
+<th>repository</th>
+<th>version</th>
+<th>stars</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a></td>
+<td><a target="_blank" rel="noopener" href="https://github.com/D-Sketon/hexo-theme-reimu">hexo-theme-reimu</a></td>
+<td><img alt="version" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FD-Sketon%2Fhexo-theme-reimu%2Fraw%2Fmain%2Fpackage.json&query=%24.version&label=version"></td>
+<td><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/D-Sketon/hexo-theme-reimu"></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://astro.build/">Astro</a></td>
+<td><a target="_blank" rel="noopener" href="https://github.com/D-Sketon/astro-theme-reimu">astro-theme-reimu</a></td>
+<td><img alt="version" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FD-Sketon%2Fastro-theme-reimu%2Fraw%2Fmain%2Fpackage.json&query=%24.version&label=version"></td>
+<td><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/D-Sketon/astro-theme-reimu"></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://gohugo.io/">Hugo</a></td>
+<td><a target="_blank" rel="noopener" href="https://github.com/D-Sketon/hugo-theme-reimu">hugo-theme-reimu</a></td>
+<td><img alt="version" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2FD-Sketon%2Fhugo-theme-reimu%2Fraw%2Fmain%2Fpackage.json&query=%24.version&label=version"></td>
+<td><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/D-Sketon/hugo-theme-reimu"></td>
+</tr>
+</tbody></table>
+<p><strong>欢迎提交 ISSUE 和 PR！</strong></p>
+<h2 id="特性"><a href="#特性" class="headerlink" title="特性"></a>特性</h2><h3 id="基础功能"><a href="#基础功能" class="headerlink" title="基础功能"></a>基础功能</h3><ul>
+<li>✨ 完整的博客功能</li>
+<li>🔄 兼容 Hexo6 及以上版本</li>
+<li>📱 响应式布局</li>
+<li>🌙 暗黑模式支持</li>
+<li>🅰️ i18n 支持</li>
+</ul>
+<h3 id="代码与数学"><a href="#代码与数学" class="headerlink" title="代码与数学"></a>代码与数学</h3><ul>
+<li>🖥️ 代码高亮与复制</li>
+<li>➗ KaTeX &#x2F; MathJax3 数学公式支持</li>
+<li>📊 Mermaid 流程图支持</li>
+</ul>
+<h3 id="搜索与评论"><a href="#搜索与评论" class="headerlink" title="搜索与评论"></a>搜索与评论</h3><ul>
+<li>🔍 Algolia 搜索集成</li>
+<li>🔍 本地搜索集成</li>
+<li>💬 多评论系统支持：<ul>
+<li>Valine</li>
+<li>Waline</li>
+<li>Twikoo</li>
+<li>Gitalk</li>
+<li>Giscus</li>
+</ul>
+</li>
+</ul>
+<h3 id="统计与分析"><a href="#统计与分析" class="headerlink" title="统计与分析"></a>统计与分析</h3><ul>
+<li>📊 文章阅读统计（Valine &#x2F; Waline）</li>
+<li>👥 访客统计（不蒜子）</li>
+</ul>
+<h3 id="媒体与交互功能"><a href="#媒体与交互功能" class="headerlink" title="媒体与交互功能"></a>媒体与交互功能</h3><ul>
+<li>🎵 音乐播放器支持：<ul>
+<li>Aplayer</li>
+<li>Meting</li>
+</ul>
+</li>
+<li>🖼️ 图片懒加载</li>
+<li>⚡ 加载动画</li>
+<li>🖱️ 鼠标特效：<ul>
+<li>动画效果</li>
+<li>灵梦鼠标指针</li>
+</ul>
+</li>
+<li>👾 Live2D &#x2F; Live2D-widgets 集成</li>
+</ul>
+<h3 id="导航与结构"><a href="#导航与结构" class="headerlink" title="导航与结构"></a>导航与结构</h3><ul>
+<li>📑 目录导航（TOC）</li>
+<li>🔄 PJAX 支持</li>
+<li>🔧 ServiceWorker 实现</li>
+<li>📰 RSS 订阅</li>
+</ul>
+<h3 id="设计与自定义"><a href="#设计与自定义" class="headerlink" title="设计与自定义"></a>设计与自定义</h3><ul>
+<li>🎨 图标支持：<ul>
+<li>Iconfont</li>
+<li>FontAwesome</li>
+</ul>
+</li>
+<li>🔗 内置标签插件：<ul>
+<li>内部链接</li>
+<li>外部链接</li>
+<li>友情链接</li>
+</ul>
+</li>
+<li>🎨 自定义容器</li>
+<li>©️ 文章版权声明</li>
+<li>🌐 自定义 CDN 源配置</li>
+<li>🎨 分享卡片功能</li>
+</ul>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><blockquote>
+<p>纯小白可以直接使用 <a target="_blank" rel="noopener" href="https://github.com/D-Sketon/reimu-template">reimu-template</a>。其中预先安装了 hexo, hexo-theme-reimu 和其他功能包，只需 克隆仓库-安装依赖-修改配置 即可获得一个基本的博客！</p>
+</blockquote>
+<p>使用 npm</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-theme-reimu --save</span><br></pre></td></tr></table></figure>
+
+<p>或直接克隆本仓库至 <code>/themes</code> 文件夹下并重命名为 <code>reimu</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/D-Sketon/hexo-theme-reimu.git</span><br></pre></td></tr></table></figure>
+
+<p>并修改 <code>_config.yml</code> 中的 theme</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">reimu</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><details>
+<summary>基本结构</summary>
+
+<h3 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h3><p>为了保证显示正确，请参考 <code>_example</code> 在 <code>source</code> 中分别建立 <code>_data</code>、<code>about</code> 和 <code>friend</code> 文件夹 （注意：是博客根目录下的 <code>source</code> 文件夹，而不是主题中的 <code>source</code> ！）</p>
+<h4 id="data"><a href="#data" class="headerlink" title="_data"></a>_data</h4><ul>
+<li><code>avatar</code> 文件夹中存储作者头像，默认命名 <code>avatar.webp</code>，可在内层 <code>_config.yml</code> 中做如下配置</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">avatar:</span> <span class="string">&quot;avatar.webp&quot;</span> <span class="comment"># 默认就是在avatar文件夹内寻找，请不要包含路径，否则会404</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><code>covers</code> 文件夹中存储文章封面</li>
+<li><code>covers.yml</code> 中存储文章封面 url</li>
+</ul>
+<h4 id="about"><a href="#about" class="headerlink" title="about"></a>about</h4><p><code>index.md</code> 作为<strong>关于</strong>页面</p>
+<h4 id="friend"><a href="#friend" class="headerlink" title="friend"></a>friend</h4><p><code>index.md</code> 作为<strong>友链</strong>页面，在 <code>_data.yml</code> 中填入友链信息即可在页面上显示对应好友卡片</p>
+</details>
+<details>
+<summary>封面、头图和favicon</summary>
+
+<h3 id="封面、头图和-favicon"><a href="#封面、头图和-favicon" class="headerlink" title="封面、头图和 favicon"></a>封面、头图和 favicon</h3><h4 id="封面"><a href="#封面" class="headerlink" title="封面"></a>封面</h4><p>封面显示逻辑如下</p>
+<ul>
+<li>如果文章的 Front matter 中包含 cover 的 url，则该文章头图和首页缩略图均显示该 url</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">https://example.com</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果文章的 Front matter 中包含 cover 为 <code>false</code>，则该文章不显示头图（首页上仍然是随机图片）</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">cover:</span> <span class="literal">false</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果文章的 Front matter 中包含 cover 为 <code>rgb(xxx,xxx,xxx)</code>，则该文章头图为对应的渐变纯色（首页上仍然是随机图片）</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">cover:</span> <span class="string">rgb(255,117,117)</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>否则查找 <code>covers</code> 文件夹和 <code>covers.yml</code>，并从中随机挑选图片</li>
+<li>若上述文件均不存在，则显示头图</li>
+</ul>
+<h4 id="头图"><a href="#头图" class="headerlink" title="头图"></a>头图</h4><p>头图保存于 <code>themes/reimu/source/images/banner.webp</code>，可在内层 <code>_config.yml</code> 中修改</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">banner:</span> <span class="string">&quot;/images/banner.webp&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="favicon"><a href="#favicon" class="headerlink" title="favicon"></a>favicon</h4><p>favicon 保存于 <code>themes/reimu/source/images/favicon.ico</code>，可在内层 <code>_config.yml</code> 中修改</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">favicon:</span> <span class="string">&quot;/images/favicon.ico&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="置顶"><a href="#置顶" class="headerlink" title="置顶"></a>置顶</h4><p>在文章的 Front-matter 中添加 <code>sticky: true</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">sticky:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+</details>
+<details>
+<summary>代码块</summary>
+
+<h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>为保证代码块的正确显示，请保证外层 <code>_config.yml</code> 中为如下配置<br>(Hexo &lt;7.0.0)</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">prismjs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>(Hexo &gt;&#x3D;7.0.0)</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">syntax_highlighter:</span> <span class="string">highlight.js</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line">  <span class="attr">wrap:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">hljs:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>代码块同时提供了代码粘贴功能，点击代码块右上角的复制按钮即可复制代码。在内层 <code>_config.yml</code> 中可以对复制功能进行配置。<br><code>success</code> 为复制成功时的提示，<code>fail</code> 为复制失败时的提示。此外，可以配置版权声明，当复制的字符数大于 <code>count</code> 时会在复制的内容后面添加 <code>content</code> 版权声明。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">clipboard:</span></span><br><span class="line">  <span class="attr">success:</span> <span class="string">复制成功(*^▽^*)</span></span><br><span class="line">  <span class="attr">fail:</span> <span class="string">复制失败</span> <span class="string">(ﾟ⊿ﾟ)ﾂ</span></span><br><span class="line">  <span class="attr">copyright:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">count:</span> <span class="number">50</span> <span class="comment"># 大于多少字符添加版权声明</span></span><br><span class="line">    <span class="attr">content:</span> <span class="string">本文版权：本博客所有文章除特别声明外，均采用</span> <span class="string">BY-NC-SA</span> <span class="string">许可协议。转载请注明出处！</span></span><br></pre></td></tr></table></figure>
+
+<p>v1.1.0 添加了配置用于控制代码块的默认展开状态，<code>expand</code> 可以设置为 <code>true</code>、<code>false</code> 或数字，数字表示当代码块的行数大于该数字时默认收缩。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">code_block:</span></span><br><span class="line">  <span class="attr">expand:</span> <span class="literal">true</span> <span class="comment"># true | false | number</span></span><br></pre></td></tr></table></figure>
+
+</details>
+<details>
+<summary>站内评论</summary>
+
+<h3 id="站内评论"><a href="#站内评论" class="headerlink" title="站内评论"></a>站内评论</h3><blockquote>
+<p>站内评论可以使用 Front matter 中的 <code>comments</code> 独立控制每篇文章是否显示评论。<br>当 <code>comments</code> 为 <code>false</code> 时不显示评论，<code>true</code> 或不填时根据 <code>_config.yml</code> 的配置决定是否显示。</p>
+</blockquote>
+<p>若基于 <a target="_blank" rel="noopener" href="https://valine.js.org/">Valine</a><br>请参考其官方文档完成 <code>LeanCloud</code> 的配置，并在内层 <code>_config.yml</code> 中将 <code>valine.enable</code> 改为 <code>true</code>，并填入自己的 <code>appId</code> 和 <code>appKey</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">valine:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">appId:</span> <span class="string">&quot;your appId&quot;</span></span><br><span class="line">  <span class="attr">appKey:</span> <span class="string">&quot;your appKey&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>若基于 <a target="_blank" rel="noopener" href="https://waline.js.org/">Waline</a><br>请参考其<a target="_blank" rel="noopener" href="https://waline.js.org/guide/get-started/">官方文档</a>完成 <code>LeanCloud</code> 的配置，并在内层 <code>_config.yml</code> 中将 <code>waline.enable</code> 改为 <code>true</code>，并填入自己的 <code>serverURL</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">waline:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">serverURL:</span> <span class="string">&quot;your server url&quot;</span></span><br><span class="line">  <span class="attr">lang:</span> <span class="string">zh-CN</span></span><br><span class="line">  <span class="attr">locale:</span> &#123;&#125; <span class="comment"># https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80</span></span><br><span class="line">  <span class="attr">emoji:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">https://unpkg.com/@waline/emojis@1.2.0/weibo</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">https://unpkg.com/@waline/emojis@1.2.0/alus</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">https://unpkg.com/@waline/emojis@1.2.0/bilibili</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">https://unpkg.com/@waline/emojis@1.2.0/qq</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">https://unpkg.com/@waline/emojis@1.2.0/tieba</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">https://unpkg.com/@waline/emojis@1.2.0/tw-emoji</span></span><br><span class="line">  <span class="attr">meta:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">nick</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">mail</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">link</span></span><br><span class="line">  <span class="attr">requiredMeta:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">nick</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">mail</span></span><br><span class="line">  <span class="attr">wordLimit:</span> <span class="number">0</span></span><br><span class="line">  <span class="attr">pageSize:</span> <span class="number">10</span></span><br><span class="line">  <span class="attr">pageview:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>若基于 <a target="_blank" rel="noopener" href="https://twikoo.js.org/">twikoo</a><br>请参考其<a target="_blank" rel="noopener" href="https://twikoo.js.org/quick-start.html">官方文档</a>完成 腾讯云 或 Vercel 部署，并在内层 <code>_config.yml</code> 中将 <code>twikoo.enable</code> 改为 <code>true</code>，并填入自己的 <code>envId</code></p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">twikoo:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">envId:</span> <span class="comment"># 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）</span></span><br><span class="line">  <span class="attr">region:</span></span><br></pre></td></tr></table></figure>
+
+<p>若基于 <a target="_blank" rel="noopener" href="https://giscus.app/zh-CN">giscus</a><br>请参考文档完成仓库的配置，并在内层 <code>_config.yml</code> 中将 <code>giscus.enable</code> 改为 <code>true</code>，并填入对应的数据</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">giscus:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&quot;your repo&quot;</span></span><br><span class="line">  <span class="attr">repoId:</span> <span class="string">&quot;your repoId&quot;</span></span><br><span class="line">  <span class="attr">category:</span> <span class="string">&quot;your category&quot;</span></span><br><span class="line">  <span class="attr">categoryId:</span> <span class="string">&quot;your categoryId&quot;</span></span><br><span class="line">  <span class="attr">mapping:</span> <span class="string">mapping</span></span><br><span class="line">  <span class="attr">strict:</span> <span class="number">0</span></span><br><span class="line">  <span class="attr">reactionsEnabled:</span> <span class="number">1</span></span><br><span class="line">  <span class="attr">emitMetadata:</span> <span class="number">0</span></span><br><span class="line">  <span class="attr">inputPosition:</span> <span class="string">bottom</span></span><br><span class="line">  <span class="attr">lang:</span> <span class="string">zh-CN</span></span><br></pre></td></tr></table></figure>
+
+<p>若基于 <a target="_blank" rel="noopener" href="https://gitalk.github.io/">gitalk</a><br>请参考其<a target="_blank" rel="noopener" href="https://github.com/gitalk/gitalk?tab=readme-ov-file#usage">官方文档</a>完成仓库的配置，并在内层 <code>_config.yml</code> 中将 <code>gitalk.enable</code> 改为 <code>true</code>，并填入对应的数据</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">gitalk:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">clientID:</span> <span class="string">&quot;your application client ID&quot;</span></span><br><span class="line">  <span class="attr">clientSecret:</span> <span class="string">&quot;your application client secret&quot;</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">&quot;your repo&quot;</span></span><br><span class="line">  <span class="attr">owner:</span> <span class="string">&quot;repo owner&quot;</span></span><br><span class="line">  <span class="attr">admin:</span> <span class="string">&quot;repo owner and collaborators&quot;</span></span><br><span class="line">  <span class="attr">md5:</span> <span class="literal">false</span> <span class="comment"># 是否使用 md5 加密路径</span></span><br></pre></td></tr></table></figure>
+
+</details>
+<details>
+<summary>站内搜索</summary>
+
+<h3 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h3><p>若选择 <a target="_blank" rel="noopener" href="https://www.algolia.com/">Algolia</a>，请安装 <a target="_blank" rel="noopener" href="https://github.com/D-Sketon/hexo-algoliasearch">@reimujs&#x2F;hexo-algoliasearch</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install @reimujs/hexo-algoliasearch --save</span><br></pre></td></tr></table></figure>
+
+<p>并参考其 <a target="_blank" rel="noopener" href="https://github.com/D-Sketon/hexo-algoliasearch#readme">README</a> 完成对 <code>Algolia</code> 账号的配置，并在外层 <code>_config.yml</code> 中添加如下配置</p>
+<blockquote>
+<p>注意：搜索跳转链接为永久链接，所以请保证外层 <code>_config.yml</code> 中的 <code>url</code> 填写正确</p>
+</blockquote>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">algolia:</span></span><br><span class="line">  <span class="attr">appId:</span> <span class="string">&quot;your applicationID&quot;</span></span><br><span class="line">  <span class="attr">apiKey:</span> <span class="string">&quot;your apiKey&quot;</span></span><br><span class="line">  <span class="attr">adminApiKey:</span> <span class="string">&quot;your adminApiKey&quot;</span></span><br><span class="line">  <span class="attr">indexName:</span> <span class="string">&quot;your indexName&quot;</span></span><br><span class="line">  <span class="attr">chunkSize:</span> <span class="number">5000</span></span><br><span class="line">  <span class="attr">fields:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">content:strip:truncate,0,500</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">excerpt:strip</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">gallery</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">permalink</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">photos</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">slug</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">tags</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">title</span></span><br></pre></td></tr></table></figure>
+
+<p>在内层 <code>_config.yml</code> 中将 <code>algolia_search.enable</code> 改为 <code>true</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">algolia_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>1.5.0+ 后主题内置了 <code>hexo-generator-search</code>，所以无需再安装 <code>hexo-generator-search</code></p>
+</blockquote>
+<p>本主题内置了 hexo-generator-search，若选择本机搜索，请在内层 <code>_config.yml</code> 中将 <code>generator_search.enable</code> 改为 <code>true</code>，其余配置参考 <a target="_blank" rel="noopener" href="https://github.com/wzpan/hexo-generator-search">hexo-generator-search</a></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">generator_search:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+</details>
+<details>
+<summary>数学公式</summary>
+
+<h3 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h3><p>请安装 <a target="_blank" rel="noopener" href="https://github.com/D-Sketon/hexo-renderer-markdown-it-plus">@reimujs&#x2F;hexo-renderer-markdown-it-plus</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-renderer-marked --save</span><br><span class="line">npm install @reimujs/hexo-renderer-markdown-it-plus --save</span><br></pre></td></tr></table></figure>
+
+<p>默认关闭，在内层 <code>_config.yml</code> 中将 <code>math.enable</code> 改为 <code>true</code> 可以开启数学公式支持</p>
+<blockquote>
+<p>注意不要同时开启 KaTeX 和 MathJax3</p>
+</blockquote>
+<h4 id="KaTeX"><a href="#KaTeX" class="headerlink" title="KaTeX"></a>KaTeX</h4><p>如果想要基于服务端渲染，在内层 <code>_config.yml</code> 中将 <code>math.katex.enable</code> 改为 <code>true</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">math:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">katex:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">autoRender:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>如果想要基于客户端渲染，在内层 <code>_config.yml</code> 中将 <code>math.katex.enable</code> 改为 <code>true</code>，并将 <code>autoRender</code> 也改为 <code>true</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">math:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">katex:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">autoRender:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>在外层 <code>_config.yml</code> 中添加如下配置</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">markdown_it_plus:</span></span><br><span class="line">  <span class="attr">rawLaTeX:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="MathJax3"><a href="#MathJax3" class="headerlink" title="MathJax3"></a>MathJax3</h4><p>如果想要使用 MathJax3，请在内层 <code>_config.yml</code> 中将 <code>math.mathjax.enable</code> 改为 <code>true</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">math:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">mathjax:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">options:</span> <span class="comment"># MathJax 配置</span></span><br></pre></td></tr></table></figure>
+
+<p>在外层 <code>_config.yml</code> 中添加如下配置</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">markdown_it_plus:</span></span><br><span class="line">  <span class="attr">rawLaTeX:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+</details>
+<details>
+<summary>Mermaid 流程图</summary>
+
+<h3 id="Mermaid-流程图"><a href="#Mermaid-流程图" class="headerlink" title="Mermaid 流程图"></a>Mermaid 流程图</h3><p>请安装 <a target="_blank" rel="noopener" href="https://github.com/webappdevelp/hexo-filter-mermaid-diagrams">hexo-filter-mermaid-diagrams</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-filter-mermaid-diagrams --save</span><br></pre></td></tr></table></figure>
+
+<p>在内层 <code>_config.yml</code> 中将 <code>mermaid.enable</code> 改为 <code>true</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mermaid:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>并在需要使用 mermaid 的文章的 front-matter 中添加 <code>mermaid: true</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Hello</span> <span class="string">World</span></span><br><span class="line"><span class="attr">mermaid:</span> <span class="literal">true</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+</details>
+<details>
+<summary>RSS</summary>
+
+<h3 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h3><p>请安装 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure>
+
+<p>并参考其 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed#readme">README</a> 在外层 <code>_config.yml</code> 完成对 <code>feed</code> 的配置<br>在内层 <code>_config.yml</code> 中填入生成的 <code>xml</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">rss:</span> <span class="string">atom.xml</span></span><br></pre></td></tr></table></figure>
+
+</details>
+
+<details>
+<summary>i18n</summary>
+
+<h3 id="i18n"><a href="#i18n" class="headerlink" title="i18n"></a>i18n</h3><p>本主题默认提供 <code>en</code>、<code>zh-CN</code>、<code>zh-TW</code> 和 <code>ja</code> 四种语言，可以在外层 <code>_config.yml</code> 中修改 <code>language</code> 来切换语言</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">language:</span> <span class="string">zh-CN</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>以下为实验性功能，可能会有 BUG</p>
+</blockquote>
+<p>v1.4.0+ 实验性地引入了 <code>hexo-generator-i18n</code> 并提供了多语言切换功能，可以在内层 <code>_config.yml</code> 中配置 <code>i18n</code> 来添加自定义语言，其配置方式可参考 <a target="_blank" rel="noopener" href="https://github.com/Jamling/hexo-generator-i18n">hexo-generator-i18n</a>：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">i18n:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># false | true</span></span><br><span class="line">  <span class="attr">type:</span> [<span class="string">page</span>, <span class="string">post</span>]</span><br><span class="line">  <span class="attr">generator:</span> [<span class="string">archive</span>, <span class="string">category</span>, <span class="string">tag</span>, <span class="string">index</span>]</span><br><span class="line">  <span class="attr">languages:</span> [<span class="string">zh-CN</span>, <span class="string">en</span>] <span class="comment"># 语言列表，第一个为默认语言</span></span><br></pre></td></tr></table></figure>
+
+<p>对于 post 的多语言支持，可以在 Front-matter 中添加 <code>lang</code> 来指定<strong>除默认语言外的</strong>其他语言（默认语言不需要添加）</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">lang:</span> <span class="string">en</span></span><br></pre></td></tr></table></figure>
+
+<p>以上会生成 <code>/en/:permalink</code> 的页面</p>
+<p>对于 page 的多语言支持，可直接在 <code>source</code> 文件夹下新建对应语言的文件夹，并将 <code>index.md</code> 放入其中，如 <code>source/en/about/index.md</code>。这会生成 <code>/en/about</code> 的页面</p>
+<p>详情请见 <a target="_blank" rel="noopener" href="https://d-sketon.github.io/20250223/hexo-theme-reimu-i18n/">如何为Hexo添加多语言支持</a></p>
+</details>
+
+<details>
+<summary>Icon</summary>
+
+<h3 id="Icon"><a href="#Icon" class="headerlink" title="Icon"></a>Icon</h3><p>Icon 默认使用本主题提供的 iconfont（v0.1.3+）</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">icon_font:</span> <span class="string">4552607_0khxww3tj3q9</span></span><br></pre></td></tr></table></figure>
+
+<p>如果想要继续使用 fontawesome 图标，请将 <code>icon_font</code> 设置为 <code>false</code>，此时会使用 <code>vendor</code> 中对应的 fontawesome</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">fontawesome:</span></span><br><span class="line">  <span class="attr">high_priority:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">webcache|@fortawesome/fontawesome-free@6.5.1/css/regular.min.css</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">webcache|@fortawesome/fontawesome-free@6.5.1/css/solid.min.css</span></span><br><span class="line">  <span class="attr">low_priority:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">webcache|@fortawesome/fontawesome-free@6.5.1/css/brands.min.css</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">webcache|@fortawesome/fontawesome-free@6.5.1/css/v5-font-face.min.css</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">webcache|@fortawesome/fontawesome-free@6.5.1/css/v4-font-face.min.css</span></span><br></pre></td></tr></table></figure>
+
+</details>
+
+<details>
+<summary>扩展功能</summary>
+
+<h3 id="扩展功能"><a href="#扩展功能" class="headerlink" title="扩展功能"></a>扩展功能</h3><h4 id="暗黑模式"><a href="#暗黑模式" class="headerlink" title="暗黑模式"></a>暗黑模式</h4><p>默认为 <code>auto</code>，根据用户系统设置自动切换。可以设置为 <code>true</code> 或 <code>false</code> 改变默认状态</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">dark_mode:</span></span><br><span class="line">  <span class="comment"># true 代表暗黑模式默认开启</span></span><br><span class="line">  <span class="comment"># false 代表暗黑模式默认关闭</span></span><br><span class="line">  <span class="comment"># auto 代表根据用户系统设置自动切换</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="string">auto</span> <span class="comment"># true | false | auto</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Pace-进度条"><a href="#Pace-进度条" class="headerlink" title="Pace 进度条"></a>Pace 进度条</h4><p>默认开启</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pace:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Firework-鼠标特效"><a href="#Firework-鼠标特效" class="headerlink" title="Firework 鼠标特效"></a>Firework 鼠标特效</h4><p>默认开启</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">firework:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>具体配置请查看 <a target="_blank" rel="noopener" href="https://github.com/D-Sketon/mouse-firework">mouse-firework</a></p>
+<h4 id="PJAX"><a href="#PJAX" class="headerlink" title="PJAX"></a>PJAX</h4><p>默认关闭</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pjax:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>PJAX 在 v0.0.10 中被引入，用于那些需要添加音乐播放器等需要 SPA 的用户。经过一段时间的迭代后已基本上稳定，但引入后仍然可能会出现诸如<strong>脚本无法执行</strong>、<strong>脚本重复执行</strong>、<strong>页面渲染混乱</strong>等 BUG。请慎重考虑！</p>
+</blockquote>
+<blockquote>
+<p>PJAX 无法与 <code>relative_link: true</code> 配合使用！</p>
+</blockquote>
+<h4 id="ServiceWorker"><a href="#ServiceWorker" class="headerlink" title="ServiceWorker"></a>ServiceWorker</h4><p>默认关闭</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">service_worker:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Live2D"><a href="#Live2D" class="headerlink" title="Live2D"></a>Live2D</h4><p>默认关闭</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">position:</span> <span class="string">left</span> <span class="comment"># left | right</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Live2D-Widgets"><a href="#Live2D-Widgets" class="headerlink" title="Live2D Widgets"></a>Live2D Widgets</h4><p>默认关闭</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">live2d_widgets:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">position:</span> <span class="string">left</span> <span class="comment"># left | right</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Reimu-鼠标指针"><a href="#Reimu-鼠标指针" class="headerlink" title="Reimu 鼠标指针"></a>Reimu 鼠标指针</h4><p>默认开启</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">reimu_cursor:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">cursor:</span></span><br><span class="line">    <span class="attr">default:</span> <span class="string">../images/cursor/reimu-cursor-default.png</span></span><br><span class="line">    <span class="attr">pointer:</span> <span class="string">../images/cursor/reimu-cursor-pointer.png</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">../images/cursor/reimu-cursor-text.png</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="响应式头图（v0-2-0-）"><a href="#响应式头图（v0-2-0-）" class="headerlink" title="响应式头图（v0.2.0+）"></a>响应式头图（v0.2.0+）</h4><p>默认关闭，打开后并提供对应尺寸的图片和媒体查询可以在一定程度上提高移动端的 LCP</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">banner_srcset:</span></span><br><span class="line"><span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">srcset:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">src:</span> <span class="string">&quot;/images/banner-600w.webp&quot;</span></span><br><span class="line">    <span class="attr">media:</span> <span class="string">&quot;(max-width: 479px)&quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">src:</span> <span class="string">&quot;/images/banner-800w.webp&quot;</span></span><br><span class="line">    <span class="attr">media:</span> <span class="string">&quot;(max-width: 799px)&quot;</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">src:</span> <span class="string">&quot;/images/banner.webp&quot;</span></span><br><span class="line">    <span class="attr">media:</span> <span class="string">&quot;(min-width: 800px)&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Quicklink（v0-2-3-）"><a href="#Quicklink（v0-2-3-）" class="headerlink" title="Quicklink（v0.2.3+）"></a>Quicklink（v0.2.3+）</h4><p>默认关闭，打开后可以在用户停留在页面时预加载链接，提高用户体验</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">quicklink:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">timeout:</span> <span class="number">3000</span> <span class="comment"># 预加载超时时间</span></span><br><span class="line">  <span class="attr">priority:</span> <span class="literal">true</span> <span class="comment"># 是否优先加载</span></span><br><span class="line">  <span class="attr">ignores:</span> [] <span class="comment"># 忽略的链接，仅支持字符串</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="文章版权声明（v0-2-0-）"><a href="#文章版权声明（v0-2-0-）" class="headerlink" title="文章版权声明（v0.2.0+）"></a>文章版权声明（v0.2.0+）</h4><p>默认关闭</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">article_copyright:</span></span><br><span class="line"><span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># 是否展示版权卡片？</span></span><br><span class="line"><span class="attr">content:</span></span><br><span class="line">  <span class="attr">author:</span> <span class="comment"># true | false 版权卡片展示作者？</span></span><br><span class="line">  <span class="attr">link:</span> <span class="comment"># true | false 版权卡片展示链接？</span></span><br><span class="line">  <span class="attr">title:</span> <span class="comment"># true | false 版权卡片展示标题？</span></span><br><span class="line">  <span class="attr">date:</span> <span class="comment"># true | false 版权卡片展示创建日期？</span></span><br><span class="line">  <span class="attr">updated:</span> <span class="comment"># true | false 版权卡片展示更新日期？</span></span><br><span class="line">  <span class="attr">license:</span> <span class="comment"># true | false 版权卡片展示协议？</span></span><br></pre></td></tr></table></figure>
+
+<p>此外，也可以通过文章的 front-matter 控制，其优先级高于全局配置</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">copyright:</span> <span class="literal">true</span> <span class="comment"># 是否展示版权卡片？</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="文章过期提醒（v0-2-4-）"><a href="#文章过期提醒（v0-2-4-）" class="headerlink" title="文章过期提醒（v0.2.4+）"></a>文章过期提醒（v0.2.4+）</h4><p>默认关闭</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">outdate:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">daysAgo:</span> <span class="number">180</span> <span class="comment"># 多少天前的文章算过期</span></span><br><span class="line">  <span class="attr">message:</span> <span class="string">本文最后更新于</span> &#123;<span class="string">time</span>&#125;<span class="string">，请注意文中内容可能已经发生变化。</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="赞助（v0-3-2-）"><a href="#赞助（v0-3-2-）" class="headerlink" title="赞助（v0.3.2+）"></a>赞助（v0.3.2+）</h4><p>默认关闭</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sponsor:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># 是否展示赞助二维码？</span></span><br><span class="line">  <span class="attr">tip:</span> <span class="string">请作者喝杯咖啡吧！</span> <span class="comment"># 赞助提示</span></span><br><span class="line">  <span class="attr">icon:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">&quot;../images/taichi.png&quot;</span> <span class="comment"># 赞助图标，相对于 css/style.css 的路径，所以需要向上一级才能找到 images 文件夹</span></span><br><span class="line">    <span class="attr">rotate:</span> <span class="literal">true</span> <span class="comment"># 是否旋转图标</span></span><br><span class="line">    <span class="attr">mask:</span> <span class="literal">true</span> <span class="comment"># 是否将图片作为遮罩（即只显示 png 图片的轮廓）</span></span><br><span class="line">  <span class="attr">qr:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">支付宝</span> <span class="comment"># 二维码名称</span></span><br><span class="line">      <span class="attr">src:</span> <span class="string">&quot;/sponsor/alipay.jpg&quot;</span> <span class="comment"># 二维码路径，请自行填写</span></span><br></pre></td></tr></table></figure>
+
+<p>此外，也可以通过文章的 front-matter 控制，其优先级高于全局配置</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">sponsor:</span> <span class="literal">true</span> <span class="comment"># 是否展示赞助二维码？</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="首页目录卡片（v1-0-0-）"><a href="#首页目录卡片（v1-0-0-）" class="headerlink" title="首页目录卡片（v1.0.0+）"></a>首页目录卡片（v1.0.0+）</h4><p>默认关闭，打开后可以在首页展示目录卡片，用于代替 widget 中的目录</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_categories:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> <span class="comment"># 是否展示首页目录卡片？</span></span><br><span class="line">  <span class="attr">content:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">categories:</span> <span class="comment"># 目录名称，格式和 front-matter 中的 categories 一致，可以为字符串（单级分类）或数组（多级分类）</span></span><br><span class="line">      <span class="attr">cover:</span> <span class="comment"># 卡片封面，不填则使用随机封面</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">categories:</span></span><br><span class="line">      <span class="attr">cover:</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="音乐播放器（v1-2-0-）"><a href="#音乐播放器（v1-2-0-）" class="headerlink" title="音乐播放器（v1.2.0+）"></a>音乐播放器（v1.2.0+）</h4><blockquote>
+<p>使用前建议先打开 Pjax，否则会出现播放器自动暂停的问题</p>
+</blockquote>
+<p>使用 Aplayer + Meting（可选）默认关闭</p>
+<h5 id="纯Aplayer"><a href="#纯Aplayer" class="headerlink" title="纯Aplayer"></a>纯Aplayer</h5><p>将 <code>player.aplayer.enable</code> 设置为 <code>true</code>，并在 <code>player.aplayer.options</code> 中参考 <a target="_blank" rel="noopener" href="https://aplayer.js.org/#/home?id=options">Aplayer Docs</a> 进行配置</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">player:</span></span><br><span class="line">  <span class="attr">aplayer:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">options:</span></span><br><span class="line">      <span class="attr">audio:</span> [] <span class="comment"># audio list</span></span><br><span class="line">      <span class="attr">fixed:</span></span><br><span class="line">      <span class="attr">autoplay:</span></span><br><span class="line">      <span class="attr">loop:</span></span><br><span class="line">      <span class="attr">order:</span></span><br><span class="line">      <span class="attr">preload:</span> </span><br><span class="line">      <span class="attr">volume:</span></span><br><span class="line">      <span class="attr">mutex:</span></span><br><span class="line">      <span class="attr">listFolded:</span></span><br><span class="line">      <span class="attr">lrcType:</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="Aplayer-Meting"><a href="#Aplayer-Meting" class="headerlink" title="Aplayer + Meting"></a>Aplayer + Meting</h5><p>同时将 <code>player.aplayer.enable</code> 和 <code>player.meting.enable</code> 设置为 <code>true</code>，并在 <code>player.meting.options</code> 中参考 <a target="_blank" rel="noopener" href="https://github.com/metowolf/MetingJS?tab=readme-ov-file#option">Meting Docs</a> 进行配置，<code>player.aplayer.options</code> 为 Aplayer 配置</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">player:</span></span><br><span class="line">  <span class="attr">aplayer:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">options:</span></span><br><span class="line">      <span class="attr">audio:</span> [] <span class="comment"># this option will be overwritten by meting</span></span><br><span class="line">      <span class="attr">fixed:</span></span><br><span class="line">      <span class="attr">autoplay:</span></span><br><span class="line">      <span class="attr">loop:</span></span><br><span class="line">      <span class="attr">order:</span></span><br><span class="line">      <span class="attr">preload:</span> </span><br><span class="line">      <span class="attr">volume:</span></span><br><span class="line">      <span class="attr">mutex:</span></span><br><span class="line">      <span class="attr">listFolded:</span></span><br><span class="line">      <span class="attr">lrcType:</span></span><br><span class="line">  <span class="attr">meting:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">meting_api:</span> <span class="comment"># custom api</span></span><br><span class="line">    <span class="attr">options:</span></span><br><span class="line">      <span class="attr">id:</span> </span><br><span class="line">      <span class="attr">server:</span> </span><br><span class="line">      <span class="attr">type:</span> </span><br><span class="line">      <span class="attr">auto:</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="Pangu-自动分割"><a href="#Pangu-自动分割" class="headerlink" title="Pangu 自动分割"></a>Pangu 自动分割</h4><p>默认关闭，自动替你在文章中所有的中文字和半形的英文、数字、符号之间插入空白。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">pangu:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">false</span> </span><br></pre></td></tr></table></figure>
+
+<h4 id="分享链接-卡片（v1-3-0-）"><a href="#分享链接-卡片（v1-3-0-）" class="headerlink" title="分享链接&#x2F;卡片（v1.3.0+）"></a>分享链接&#x2F;卡片（v1.3.0+）</h4><p>默认关闭，目前支持 <code>facebook</code>、<code>twitter</code>、<code>linkedin</code>、<code>reddit</code>、<code>weibo</code>、<code>qq</code>、<code>weixin</code>。</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">share:</span></span><br><span class="line">  <span class="comment"># - facebook</span></span><br><span class="line">  <span class="comment"># - twitter</span></span><br><span class="line">  <span class="comment"># - linkedin</span></span><br><span class="line">  <span class="comment"># - reddit</span></span><br><span class="line">  <span class="comment"># - weibo</span></span><br><span class="line">  <span class="comment"># - qq</span></span><br><span class="line">  <span class="comment"># - weixin</span></span><br></pre></td></tr></table></figure>
+
+<p><code>weixin</code> 状态下会生成带有二维码的分享卡片，可保存到本地后分享到微信朋友圈（注意，当文章封面存在跨域问题时无法使用 html-to-image 正确生成含图片的卡片！）</p>
+</details>
+
+<details>
+<summary>内置卡片标签插件</summary>
+
+<h3 id="内置卡片标签插件"><a href="#内置卡片标签插件" class="headerlink" title="内置卡片标签插件"></a>内置卡片标签插件</h3><h4 id="friendLink-友链卡片"><a href="#friendLink-友链卡片" class="headerlink" title="friendLink 友链卡片"></a>friendLink 友链卡片</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">%</span> <span class="string">friendsLink</span> <span class="string">path</span> <span class="string">%</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<p>第一个参数 <code>path</code> 表示友链 yaml 的路径</p>
+<h4 id="postLinkCard-内链卡片"><a href="#postLinkCard-内链卡片" class="headerlink" title="postLinkCard 内链卡片"></a>postLinkCard 内链卡片</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">%</span> <span class="string">postLinkCard</span> <span class="string">slug</span> [<span class="string">cover</span>]<span class="string">|&quot;auto&quot;</span> [<span class="string">escape</span>] <span class="string">%</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中第一个参数为文章的 <code>slug</code>；第二个参数（可选）为卡片展示的封面，如果设置为 <code>auto</code> 则自动使用博客的 <code>banner</code>；第三个参数（可选）表示文章标题是否被转义</p>
+<blockquote>
+<p>slug 的生成算法：<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-util/blob/master/lib/slugize.ts">https://github.com/hexojs/hexo-util/blob/master/lib/slugize.ts</a><br>简单来说就是去除文章标题的不可见字符，把文章的标题中的特殊字符 <code>\s~!@#$%^&amp;*()\-_+=[]&#123;&#125;|\;:&quot;&#39;&lt;&gt;,.?/</code> 全换成分隔符 <code>-</code>，合并连续分隔符并去除首尾分隔符</p>
+</blockquote>
+<h4 id="externalLinkCard-外链卡片"><a href="#externalLinkCard-外链卡片" class="headerlink" title="externalLinkCard 外链卡片"></a>externalLinkCard 外链卡片</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">%</span> <span class="string">externalLinkCard</span> <span class="string">title</span> <span class="string">link</span> [<span class="string">cover</span>]<span class="string">|&quot;auto&quot;</span> <span class="string">%</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中第一个参数为文章的标题；第二个参数为文章的外部链接，第三个参数（可选）为卡片展示的封面，如果设置为 <code>auto</code> 则自动使用缺省封面</p>
+</details>
+
+<details>
+<summary>自定义容器</summary>
+
+<h3 id="自定义容器"><a href="#自定义容器" class="headerlink" title="自定义容器"></a>自定义容器</h3><p>本主题提供了类似 vitepress 的自定义容器功能，使用前需要安装 <a target="_blank" rel="noopener" href="https://github.com/D-Sketon/hexo-renderer-markdown-it-plus">@reimujs&#x2F;hexo-renderer-markdown-it-plus</a>，并在内层 <code>_config.yml</code> 中将 <code>markdown.container</code> 改为 <code>true</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">markdown:</span></span><br><span class="line">  <span class="attr">container:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>使用方法如下：</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">::: info</span><br><span class="line">This is an info box.</span><br><span class="line">:::</span><br><span class="line"></span><br><span class="line">::: tip</span><br><span class="line">This is a tip.</span><br><span class="line">:::</span><br><span class="line"></span><br><span class="line">::: warning</span><br><span class="line">This is a warning.</span><br><span class="line">:::</span><br><span class="line"></span><br><span class="line">::: danger</span><br><span class="line">This is a dangerous warning.</span><br><span class="line">:::</span><br><span class="line"></span><br><span class="line">::: danger STOP</span><br><span class="line">Danger zone, do not proceed</span><br><span class="line">:::</span><br><span class="line"></span><br><span class="line">::: details</span><br><span class="line">This is a details block.</span><br><span class="line">:::</span><br></pre></td></tr></table></figure>
+
+</details>
+<details>
+<summary>自定义主题</summary>
+
+<p>hexo-theme-reimu 主题支持高度的自定义，你可以通过修改 <code>_config.yml</code> 来定制你的主题。</p>
+<h4 id="定制主题颜色"><a href="#定制主题颜色" class="headerlink" title="定制主题颜色"></a>定制主题颜色</h4><p>hexo-theme-reimu 主题支持通过 CSS 变量定制主题颜色，你可以通过修改 <code>:root</code> 伪类下的 CSS 变量来定制你的主题颜色。</p>
+<p>变量文件位于 <code>source/css/_variables.styl</code>，你可以在这个文件中找到所有的 CSS 变量，但其实只需要修改以下伪类下的变量即可：</p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span></span><br><span class="line">  <span class="attr">--red-0</span>: <span class="built_in">hsl</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">50%</span>)</span><br><span class="line">  <span class="attr">--red-1</span>: <span class="built_in">hsl</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">66%</span>)</span><br><span class="line">  <span class="attr">--red-2</span>: <span class="built_in">hsl</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">74%</span>)</span><br><span class="line">  <span class="attr">--red-3</span>: <span class="built_in">hsl</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">84%</span>)</span><br><span class="line">  <span class="attr">--red-4</span>: <span class="built_in">hsl</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">91%</span>)</span><br><span class="line">  <span class="attr">--red-5</span>: <span class="built_in">hsl</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">95%</span>)</span><br><span class="line">  <span class="attr">--red-5-5</span>: <span class="built_in">hsl</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">96%</span>)</span><br><span class="line">  <span class="attr">--red-6</span>: <span class="built_in">hsl</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">98%</span>)</span><br><span class="line"></span><br><span class="line">  <span class="attr">--color-red-6-shadow</span>: <span class="built_in">hsla</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">65%</span>, <span class="number">0.6</span>)</span><br><span class="line">  <span class="attr">--color-red-3-shadow</span>: <span class="built_in">hsla</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">65%</span>, <span class="number">0.3</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="selector-attr">[data-theme=<span class="string">&quot;dark&quot;</span>]</span></span><br><span class="line">  root</span><br><span class="line">    <span class="attr">--red-4</span>: <span class="built_in">hsla</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">91%</span>, <span class="number">0.5</span>)</span><br><span class="line">    <span class="attr">--red-5</span>: <span class="built_in">hsla</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">95%</span>, <span class="number">0.2</span>)</span><br><span class="line">    <span class="attr">--red-5-5</span>: <span class="built_in">hsla</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">96%</span>, <span class="number">0.1</span>)</span><br><span class="line">    <span class="attr">--red-6</span>: <span class="built_in">hsla</span>(<span class="number">0</span>, <span class="number">100%</span>, <span class="number">98%</span>, <span class="number">0.2</span>)</span><br></pre></td></tr></table></figure>
+
+<h4 id="自定义字体"><a href="#自定义字体" class="headerlink" title="自定义字体"></a>自定义字体</h4><p>可通过以下配置定义谷歌字体：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># https://fonts.google.com/</span></span><br><span class="line"><span class="attr">font:</span></span><br><span class="line">  <span class="attr">article:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Mulish</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Noto</span> <span class="string">Serif</span> <span class="string">SC</span></span><br><span class="line">  <span class="attr">code:</span></span><br><span class="line">    <span class="comment"># - Ubuntu Mono</span></span><br><span class="line">    <span class="comment"># - Source Code Pro</span></span><br><span class="line">    <span class="comment"># - JetBrains Mono</span></span><br></pre></td></tr></table></figure>
+
+<p>v1.1.0 添加了 <code>local_font</code> 配置用于定义本机字体，其优先级比谷歌字体低：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">local_font:</span></span><br><span class="line">  <span class="attr">article:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;-apple-system&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">PingFang</span> <span class="string">SC</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Microsoft</span> <span class="string">YaHei</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">sans-serif</span></span><br><span class="line">  <span class="attr">code:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Menlo</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Monaco</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">Consolas</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">monospace</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="定制图标"><a href="#定制图标" class="headerlink" title="定制图标"></a>定制图标</h4><p>v1.0.0 经过大量重构，向用户暴露了许多配置用于改变原有的图标</p>
+<h5 id="头部-侧边栏图标"><a href="#头部-侧边栏图标" class="headerlink" title="头部 &#x2F; 侧边栏图标"></a>头部 &#x2F; 侧边栏图标</h5><p>v1.0.0 的 <code>menu</code> 配置的结构发生了变化，允许用户自定义 icon。icon 为空时默认使用太极图标，你可以填写一个十六进制的数字来自定义 icon，同时支持 fontawesome 和 icon font。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">menu:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">home</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">/</span></span><br><span class="line">    <span class="attr">icon:</span> <span class="comment"># 不填默认使用太极图标</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">archives</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">/archives</span></span><br><span class="line">    <span class="attr">icon:</span> <span class="string">f0c1</span> <span class="comment"># 你可以填写一个十六进制的数字来自定义 icon，支持 fontawesome 和 icon font</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">about</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">/about</span></span><br><span class="line">    <span class="attr">icon:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">friend</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">/friend</span></span><br><span class="line">    <span class="attr">icon:</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="底部-回到顶部-赞助图标"><a href="#底部-回到顶部-赞助图标" class="headerlink" title="底部 &#x2F; 回到顶部 &#x2F; 赞助图标"></a>底部 &#x2F; 回到顶部 &#x2F; 赞助图标</h5><p>v1.0.0 的 <code>footer</code>、<code>top</code>、<code>sponsor</code> 配置均增加了 <code>icon</code> 配置用于自定义图标。</p>
+<ul>
+<li><code>url</code> 为图标的路径，相对于 <code>css/style.css</code> 的路径，所以需要向上一级才能找到 images 文件夹。</li>
+<li><code>rotate</code> 为是否旋转图标，默认为 <code>true</code>。</li>
+<li><code>mask</code> 是否将图片作为遮罩（即只显示 png 图片的轮廓），默认为 <code>true</code>。</li>
+</ul>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">footer:</span></span><br><span class="line">  <span class="attr">icon:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">&quot;../images/taichi.png&quot;</span> <span class="comment"># 相对于 css/style.css 的路径，所以需要向上一级才能找到 images 文件夹</span></span><br><span class="line">    <span class="attr">rotate:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">mask:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">top:</span></span><br><span class="line">  <span class="attr">icon:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">&quot;../images/taichi.png&quot;</span></span><br><span class="line">    <span class="attr">rotate:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">mask:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">sponsor:</span></span><br><span class="line">  <span class="attr">icon:</span></span><br><span class="line">    <span class="attr">url:</span> <span class="string">&quot;../images/taichi.png&quot;</span></span><br><span class="line">    <span class="attr">rotate:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">mask:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="加载图标"><a href="#加载图标" class="headerlink" title="加载图标"></a>加载图标</h5><p>v1.0.0 的 <code>preloader</code> 配置增加了 <code>icon</code> 配置用于自定义图标。icon 为空时默认使用内链的 svg（保证首屏加载速度），你可以填入一个链接来自定义加载图标。</p>
+<p>不建议使用过大的图标，以免影响加载速度。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">preloader:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">text:</span> <span class="string">少女祈祷中...</span></span><br><span class="line">  <span class="attr">icon:</span> <span class="comment"># 不填默认使用内链的svg（保证首屏加载速度），你可以填入一个链接来自定义加载图标，如 &#x27;/images/taichi.png&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="锚点图标"><a href="#锚点图标" class="headerlink" title="锚点图标"></a>锚点图标</h5><p>v1.0.0 增加了 <code>anchor_icon</code> 配置用于自定义锚点图标，默认使用 <code>#</code> 图标，你可以填写一个十六进制的数字来自定义 icon，同时支持 fontawesome 和 icon font。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">anchor_icon:</span> <span class="comment"># 不填默认使用 # 图标</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="鼠标图标（v1-3-0-）"><a href="#鼠标图标（v1-3-0-）" class="headerlink" title="鼠标图标（v1.3.0+）"></a>鼠标图标（v1.3.0+）</h5><p>v1.3.0 增加了 <code>reimu_cursor.cursor</code> 配置用于自定义鼠标图标，你可以填写一个相对于 <code>css/style.css</code> 的路径来自定义鼠标图标。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">reimu_cursor:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">cursor:</span></span><br><span class="line">    <span class="attr">default:</span> <span class="string">../images/cursor/reimu-cursor-default.png</span></span><br><span class="line">    <span class="attr">pointer:</span> <span class="string">../images/cursor/reimu-cursor-pointer.png</span></span><br><span class="line">    <span class="attr">text:</span> <span class="string">../images/cursor/reimu-cursor-text.png</span></span><br></pre></td></tr></table></figure>
+
+</details>
+
+<details>
+<summary>Vendor</summary>
+
+<h3 id="Vendor"><a href="#Vendor" class="headerlink" title="Vendor"></a>Vendor</h3><p><code>vendor</code> 用于存放一些第三方资源，如 fontawesome、iconfont、katex、mathjax 等。</p>
+<p>hexo-theme-reimu 的 <code>vendor</code> 结构非常灵活，其支持以下几种形式：</p>
+<ul>
+<li><code>:cdn|:package@:version/:file</code>：使用 CDN 加速，如 <code>cdn_jsdelivr_gh|katex@0.13.11/dist/katex.min.css</code>，<code>:cdn</code>可在 <code>vendor</code> 中自行配置。目前自带以下 CDN 源：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">cdn_jsdelivr_gh:</span> <span class="string">https://cdn.jsdelivr.net/gh/</span> <span class="comment"># 仅针对github加速</span></span><br><span class="line"><span class="attr">cdn_jsdelivr_npm:</span> <span class="string">https://cdn.jsdelivr.net/npm/</span> <span class="comment"># 仅针对npm加速</span></span><br><span class="line"><span class="attr">fastly_jsdelivr_gh:</span> <span class="string">https://fastly.jsdelivr.net/gh/</span> <span class="comment"># 仅针对github加速</span></span><br><span class="line"><span class="attr">fastly_jsdelivr_npm:</span> <span class="string">https://fastly.jsdelivr.net/npm/</span> <span class="comment"># 仅针对npm加速</span></span><br><span class="line"><span class="attr">unpkg:</span> <span class="string">https://unpkg.com/</span> <span class="comment"># 仅针对npm加速</span></span><br><span class="line"><span class="attr">webcache:</span> <span class="string">https://npm.webcache.cn/</span> <span class="comment"># 仅针对npm加速</span></span><br></pre></td></tr></table></figure>
+用户可根据网络状况自行切换 CDN 源。</li>
+<li><code>https://</code> 开头：直接使用绝对链接，如 <code>https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css</code> </li>
+<li><code>/</code> 开头：本地资源，你可以把资源放在 <code>source</code> 文件夹下和 <code>_posts</code> 同级，然后使用诸如 <code>/katex.min.css</code> 的路径引用</li>
+</ul>
+<p>此外，<code>vendor</code> 还支持 SRI 校验，你可以在 <code>vendor</code> 中使用 <code>SHA-384</code> 用于校验资源的完整性，如：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">js:</span></span><br><span class="line">  <span class="attr">clipboard:</span> <span class="comment"># 使用 SRI 校验</span></span><br><span class="line">    <span class="attr">src:</span> <span class="string">webcache|clipboard@2.0.11/dist/clipboard.min.js</span></span><br><span class="line">    <span class="attr">integrity:</span> <span class="string">sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q</span></span><br><span class="line">  <span class="attr">lazysizes:</span> <span class="string">webcache|lazysizes@5.3.2/lazysizes.min.js</span> <span class="comment"># 不使用 SRI 校验</span></span><br></pre></td></tr></table></figure>
+
+<p>以上两种形式均支持，建议对外部 CDN 资源使用 SRI 校验，以确保资源的完整性。</p>
+</details>
+
+<h2 id="贡献者"><a href="#贡献者" class="headerlink" title="贡献者"></a>贡献者</h2><p><a target="_blank" rel="noopener" href="https://github.com/D-Sketon/hexo-theme-reimu/graphs/contributors"><img src="https://contributors-img.web.app/image?repo=D-Sketon/hexo-theme-reimu"></a></p>
+<h2 id="许可"><a href="#许可" class="headerlink" title="许可"></a>许可</h2><p>MIT</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+
+</article>
+
+
+
+
+
+
+</section>
+        </div>
+        
+        
+        <footer id="footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info">
+    
+    <div>
+      <span class="icon-copyright"></span>
+      2020-2025
+      <span class="footer-info-sep rotate"></span>
+      vivlos
+    </div>
+    
+      <div>
+        基于&nbsp;<a href="https://hexo.io/" rel="noopener external nofollow noreferrer" target="_blank">Hexo</a>&nbsp;
+        Theme.<a href="https://github.com/D-Sketon/hexo-theme-reimu" rel="noopener external nofollow noreferrer" target="_blank">Reimu</a>
+      </div>
+    
+    
+      <div>
+        <span class="icon-brush"></span>
+        759
+        &nbsp;|&nbsp;
+        <span class="icon-coffee"></span>
+        00:03
+      </div>
+    
+    
+    
+    
+      <div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv">总访问量&nbsp;<span id="busuanzi_value_site_pv"></span></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv">总访客量&nbsp;<span id="busuanzi_value_site_uv"></span></span>
+      </div>
+    
+  </div>
+</footer>
+
+        
+          <div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div>
+        
+        <div id="mask" class="hide"></div>
+      </div>
+      <nav id="mobile-nav">
+  <div class="sidebar-wrap">
+    
+      <div class="sidebar-author">
+  <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="vivlos" class="lazyload">
+  <div class="sidebar-author-name">vivlos</div>
+  <div class="sidebar-description"></div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div>
+    <div class="sidebar-state-number">2</div>
+  </div>
+  <div class="sidebar-state-category">
+    <div>分类</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+  <div class="sidebar-state-tag">
+    <div>标签</div>
+    <div class="sidebar-state-number">0</div>
+  </div>
+</div>
+<div class="sidebar-social">
+  
+    <div class="icon-github sidebar-social-icon">
+      <a href=https://github.com/skaaadiii itemprop="url" target="_blank" aria-label="github" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-twitter sidebar-social-icon">
+      <a href=https://twitter.com/SAT855883087 itemprop="url" target="_blank" aria-label="twitter" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+    <div class="icon-bilibili sidebar-social-icon">
+      <a href=https://space.bilibili.com/35615939 itemprop="url" target="_blank" aria-label="bilibili" rel="noopener external nofollow noreferrer"></a>
+    </div>
+  
+</div>
+<div class="sidebar-menu">
+  
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/" aria-label="首页"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">首页</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/archives" aria-label="归档"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">归档</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/about" aria-label="关于"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">关于</div>
+      </div>
+    
+      <div class="sidebar-menu-link-wrap">
+        <a class="sidebar-menu-link-dummy" href="/friend" aria-label="友链"></a>
+        <div class="sidebar-menu-icon icon rotate">
+          &#xe62b;
+        </div>
+        <div class="sidebar-menu-link">友链</div>
+      </div>
+    
+  
+</div>
+
+    
+  </div>
+  
+</nav>
+
+    </div>
+    
+    
+<script src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js" integrity="sha384-3gT&#x2F;vsepWkfz&#x2F;ff7PpWNUeMzeWoH3cDhm&#x2F;A8jM7ouoAK0&#x2F;fP&#x2F;9bcHHR5kHq2nf+e" crossorigin="anonymous"></script>
+
+
+<script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+  
+<script src="/js/aos.js"></script>
+
+  <script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', aosInit);
+    } else {
+      aosInit();
+    }
+  </script>
+
+
+
+<script src="/js/pjax_script.js" data-pjax></script>
+
+
+
+
+
+
+
+  
+<script src="https://npm.webcache.cn/mouse-firework@0.1.0/dist/index.umd.js" integrity="sha384-KM6i7tu43nYd6e0beIljxHMC5tZc58XBDu7pPA58w50h18Jsx7gLdimfS09RXlKv" crossorigin="anonymous"></script>
+
+  <script>
+    window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["#ff5252","#ff7c7c","#ffafaf","#ffd0d0"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["#ff0000"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'))
+  </script>
+
+
+
+
+
+
+
+
+
+
+<div id="lazy-script">
+  <div>
+    
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "vivlos",
+          title: "",
+          url: "http://example.com/reimuREADME.html",
+          excerpt: "",
+          description: "",
+          stripContent: "    hexo-theme-reimu                  💘 博麗 霊夢 💘     演示网站 | 开发日志 简体中文 | English     [!WARNING]v1.0.0 以下版本已经废弃，请尽快升级到 v1.0.0 以上版本  本人是车车人，所以制作了这样一款博丽灵梦风格的 Hexo 主题，融合了 landscape、Tangyuxian 和 Shoka 三个主题    framework repository version stars    Hexo hex",
+          date: "Mon Mar 17 2025 14:45:10 GMT+0800",
+          updated: "Sun Mar 16 2025 19:18:20 GMT+0800",
+          cover: "/images/banner.webp",
+        };
+      </script>
+       
+    
+    
+      
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+        
+      
+    
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+
+
+
+
+
+
+
+
+    
+  </div>
+</div>
+
+
+  <script>
+    console.log(String.raw`%c 
+ ______     ______     __     __    __     __  __    
+/\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+\ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+ \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+  \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                  
+`,'color: #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.6.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+  </script>
+  
+
+
+
+  
+<script src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js" integrity="sha384-0M75wtSkhjIInv4coYlaJU83+OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id+S" crossorigin="anonymous" async></script>
+
+
+
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then((registrations) => {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  }
+</script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+  </html>
+
