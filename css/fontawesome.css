@@ -121,6 +121,15 @@
   font-family: var(--font-icon);
   content: "\f105";
 }
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-twitter:before {
+  content: "\e61b";
+}
+.icon-bilibili:before {
+  content: "\e3d9";
+}
 .sidebar-btn-wrapper .sidebar-toc-btn:before {
   font-family: var(--font-icon);
   content: "\f0e8";
